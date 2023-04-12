@@ -1,0 +1,558 @@
+body{
+    background-color: #020202;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    background-color: rgba(2,2,2,0.2);;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    position: absolute;
+    left:50px;
+}
+
+.logo img{
+    width:5em;
+    height: 5em;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.search{
+    color: #fff;
+}
+
+.search input[type="search"]{
+    width: 350px;
+    border-radius: 20px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    padding-left:10px;
+    padding-right: 10px;
+    transition: all 0.3s;
+}
+
+.search input[type="search"]::placeholder{
+    color: rgb(206, 205, 205);
+}
+
+.search input[type="search"]:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.search input[type="search"]:focus {
+    border: #18569d 1px solid;
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+a:hover{
+    color: rgb(204, 204, 204);
+}
+
+.filtros{
+    padding-left:200px;
+    display: flex;
+    gap: 25px;
+}
+
+.cadastro-perfil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.cadastro-perfil div{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5px 20px 5px 10px ;
+    transition: all 0.2s;
+}
+
+.cadastro-perfil div:hover{
+    background-color: rgba(174, 174, 174, 0.512);
+    cursor: pointer;
+}
+
+
+.carrinho{
+    margin-right: 50px;
+}
+
+.carrinho div{
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.carrinho div:hover{
+    background-color: rgba(174, 174, 174, 0.512);
+}
+
+.background{
+    position: absolute;
+    background-image: url(imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 40em;
+    top: 0;
+    z-index: -1;
+}
+
+.background-texto{
+    position: absolute;
+    top: 50%;
+    padding-left: 100px;
+}
+
+.background-texto h4{
+    font-size: 20px;
+}
+
+.background-texto h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.main-inicio{
+    position: absolute;
+    top: 24vw;
+    padding-left: 100px;
+}
+
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.title{
+    font-weight: 700;
+    padding: 10px 0 0 10px;
+}
+
+.card{
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.card img{
+    width: 200px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.container-prod{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.prod-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.prod-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 700;
+}
+
+.prod-desc h1{
+    font-weight: 800;
+}
+
+.prod-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.prod-btn label{
+    color: black;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.2s;
+    font-weight: 700;
+    font-size: 15px;
+    width: 180px;
+}
+
+.prod-btn input:checked + label{
+    background-color: #18569d;
+}
+
+.prod-btn input:hover + label{
+    background-color: #1f69be;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.prod-quantidade{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prod-quantidade input{
+    display: flex;
+    width: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+.btn-add{
+    margin-top: 25px;
+}
+
+.btn-add input{
+    color: black;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.2s;
+    border: none;
+    font-weight: 700;
+}
+
+.btn-add input:last-child{
+    background-color: #18569d;
+    color: white;
+}
+
+.btn-add input:hover{
+    box-shadow: -3px 3px 3px rgba(255, 255, 255, 0.733);
+}
+
+.prod-preco{
+    margin-top: 25px;
+}
+.prod-preco h3{
+    font-size: 20px;
+}
+
+.desc-pagamento{
+    margin-top: 80px;
+}
+
+.desc-pagamento h5{
+ font-size: 20px;
+}
+
+.compras{
+    padding-left: 200px;
+    width: 65%;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.compras table{
+    width: 100%;
+}
+
+table .itens{
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+}
+
+
+
+table .itens h5{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+table .itens p{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+table .itens span{
+    margin: 0;
+    padding: 0;
+    color: rgb(140, 207, 40);
+    font-size: 14px;
+}
+
+.item-card img{
+    width: 160px;
+}
+
+table .preco{
+    text-align: center;
+}
+
+table .subtotal{
+    text-align: center;
+}
+
+/* Table body size */
+table  .itens{
+    width: 35%;
+}
+
+table  .preco{
+    width: 20%;
+    text-align: center;
+}
+
+table  .quantidade{
+    display: flex;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+table  .quantidade input{
+    height: fit-content;
+}
+
+table  .subtotal{
+    width: 20%;
+    text-align: center;
+}
+
+table  .actions{
+    width: 5%;
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.quantidade input{
+    display: flex;
+    width: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+
+
+.compras table th{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.compras table tr{
+    display: flex;
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+.compras table td{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.resumo{
+    position: relative;
+    padding: 20px;
+    margin-left: 50px;
+    border: #18569d solid 1px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.resumo h4{
+    border-bottom: 1px solid #18569d;
+    font-weight: 800;
+}
+
+.resumo div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.resumo div:last-child{
+    align-items: flex-end;
+}
+
+.resumo input[type="button"]{
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Coisa do kamay */
+
+.log-content{
+    display: flex;
+    padding: 5em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-titulo h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.log-titulo h3{
+    font-size: 1em;
+    padding-top: 2em;
+}
+
+.login{
+    display: block;
+}
+
+.log-btg{
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-btg p{
+    padding: 0.5em;
+}
+
+.log-btg input{
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 20px;
+    font-size: 0.87em;
+}
+
+.log-btg input:hover{
+    color: rgb(217 217 217);
+    box-shadow: #fff 0px 0px 10px 0px;
+}
+
+
+.log-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.log-form form input{
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid white;
+   padding-right: 7em; 
+   color: #fff;
+}
+
+.log-form form input::placeholder{
+    color: #fff;
+}
+
+
+.form-button{
+    box-shadow: none;
+    background-color: #18569d;
+    color: #fff;
+    border: #18569d 0px solid;
+    padding: 0.75em;
+    padding-left: 6.5em;
+    padding-right: 6.5em;
+    border-radius: 20px;
+    font-size: 0.87em;
+    margin-top: 5em;
+    font-weight: bold;
+}
+
+.form-button:hover{
+    background-color: #256dc0;
+    box-shadow: #18569d 0px 0px 10px 0px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.cadastro h3{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cadastro a{
+    font-size: 1em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #18569d;
+}
+
+.cadastro a:hover{
+    text-shadow: 0 0 2px #18569d;
+}
+
+

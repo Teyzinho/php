@@ -1,0 +1,132 @@
+.log-content{
+    display: flex;
+    padding: 5em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-titulo h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.log-titulo h3{
+    font-size: 1em;
+    padding-top: 2em;
+}
+
+.login{
+    display: block;
+}
+
+.log-btg{
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-btg p{
+    padding: 0.5em;
+}
+
+.log-btg input{
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+    border: black 1px solid;
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 20px;
+    font-size: 0.87em;
+    transition: all 0.2s;
+}
+
+.log-btg input:hover{
+    color: rgb(37, 37, 37);
+    box-shadow: black 0px 0px 2px 0px;
+}
+
+
+.log-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log-form label{
+    margin: 0;
+    padding: 0;
+}
+
+.log-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.log-form form input{
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid black;
+   padding-right: 7em; 
+   color: black;
+}
+
+.log-form form input::placeholder{
+    color: black;
+}
+
+
+.form-button{
+    box-shadow: none;
+    background-color: #18569d;
+    color: white;
+    border: #18569d 0px solid;
+    padding: 0.75em;
+    padding-left: 6.5em;
+    padding-right: 6.5em;
+    border-radius: 20px;
+    font-size: 0.87em;
+    margin-top: 5em;
+    font-weight: bold;
+}
+
+.form-button:hover{
+    background-color: #256dc0;
+    box-shadow: #18569d 0px 0px 10px 0px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.cadastro h3{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cadastro a{
+    font-size: 1em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #18569d;
+}
+
+.cadastro a:hover{
+    text-shadow: 0 0 2px #18569d;
+}
+
+

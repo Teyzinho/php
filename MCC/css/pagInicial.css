@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(237, 237, 237);
+}
+
+.logo img{
+    width:75px;
+}
+
+.search form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search label{
+    color: white;
+    background-color: #232f3e;
+    height: 35px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type="search"]{
+    width: 15vw;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border-style: none;
+}
+
+.search input[type="submit"]{
+    display: none;
+}
+
+.contas{
+    display: flex;
+}
+
+.navBar-perfil h1{
+    color:white;
+    font-size: 30px;
+}
+
+.banner{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.bannerSlide{
+    height: 400px;
+}
+
+.anuncios-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.banner1{
+    height: 600px;
+    width: 700px;
+}
+
+.banner2{
+    height: 300px;
+    width: 500px;
+}
+
+.banner1 img{
+    z-index:-1;
+
+    position: absolute;
+    width:700px;
+    height: 600px;
+}
+
+.anuncios-container .AnuncioTitulo{
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    color: white;
+    align-items: flex-end;
+}
+
+.anuncios-container .AnuncioTitulo h2{
+    width: 100%;
+    background-color: #232f3e54;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+.banner2 img{
+    z-index:-1;
+    width: 700px;
+    position: absolute;
+}
+
+.banner3{
+    height: 300px;
+    width: 700px;
+}
+
+.banner3 img{
+    z-index:-1;
+    position: absolute;
+    width:700px;
+    height: 300px;
+}
+
+
+
+
+.container-vendas{
+    display: grid;
+    margin-left: 10px;
+    gap: 5px;
+    min-height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-vendas a{
+    text-decoration: none;
+    color: black;
+}
+
+.resultado-pesquisa{
+    margin-top: 50px;
+    display: flex;
+}
+
+.filtro-pesquisa{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    background-color: white;
+}

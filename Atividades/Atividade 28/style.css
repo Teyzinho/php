@@ -1,0 +1,16 @@
+.form{
+    display: grid;
+    grid-template-columns: 150px 300px;
+}
+
+.form input{
+    width:200px;
+}
+
+.form select{
+    width: 300px;
+}
+
+.form input[type="submit"]{
+    width:100px;
+}

@@ -1,0 +1,10 @@
+
+.form{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+}
+
+.form input[type="text"]{
+    width:250px;
+}

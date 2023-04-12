@@ -1,0 +1,10 @@
+
+.form{
+    position: absolute;
+    width: 500px;
+
+    left:50%;
+    top:40%;
+
+    translate: -50% -50%;
+}

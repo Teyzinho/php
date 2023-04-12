@@ -1,0 +1,47 @@
+.prodForm{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.prodImg{
+    width: 750px;
+}
+
+.imgShow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img{
+    max-width: 600px;
+}
+
+.prodInfo{
+    margin-left:50px;
+    width: 40%;
+}
+
+.inputTitle{
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.inputPreco{
+    width:100px;
+    margin-left: 10px;
+}
+
+.prod-preco h1{
+    color:green;
+}

@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.partidas{
+    width: 700px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.times{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px black solid;
+    transition: all 0.2s;
+}
+
+.times div{
+    padding: 10px;
+}
+
+.times:hover{
+    background-color: gainsboro;
+}
+
+.filtros{
+    position:absolute;
+}
